@@ -8,20 +8,42 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     </head>
-    <body class="container">
+    <body>
         <header id="mainHeader">
             <H1>Vanilla Javascript UI</H1>
         </header>
 
-        <nav id="siteNav">
-            <a href="#" title="Menu 1">Menu 1</a>
-            <a href="#" title="Menu 2">Menu 2</a>
-            <a href="#" title="Menu 3">Menu 3</a>
+        <nav>
+            <a href="#" title="Page 1" onclick="showPage1()">Page 1</a>
+            <a href="#" title="Page 2" onClick="showPage2()">Page 2</a>
+            <a href="#" title="Page 3" onClick="showPage3()">Page 3</a>
         </nav>
 
-        <section id="mainContent">
+        <div id="page-1">
+
             <header id="contentHeader">
-                <h1>Main content</h1>
+                <h2>Welcome!</h1>
+            </header>
+
+        </div>
+
+        <div id="page-2">
+
+            <header id="contentHeader">
+                <h1>Page 2</h1>
+            </header>
+
+            <form>
+                <input type="text" placeholder="sample input">
+                <button type="submit">Sample button</button>
+                <!-- <button type="submit"><i class="fas fa-plus-square"></i></button> -->
+            </form>
+        </div>
+
+        <div id="page-3">
+
+            <header id="contentHeader">
+                <h2>Page 3</h1>
             </header>
 
             <form>
@@ -30,7 +52,7 @@
                 <!-- <button type="submit"><i class="fas fa-plus-square"></i></button> -->
             </form>
 
-        </section>
+        </div>
 
         <script type="text/javascript" src="app.js"></script>
     </body>
